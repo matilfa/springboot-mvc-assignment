@@ -1,0 +1,12 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Genre search</title>
+</head>
+<body>
+<form th:action="@{/submit}" method="post">
+    Genre:<input type="text" th:value="${genreSearch}" name="genreSearch"/>
+    <button type="submit">Search</button>
+</form>
+</body>
+</html>
